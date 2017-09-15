@@ -9,7 +9,13 @@ Copyright (C) 2017, Pablo Núñez
 
 ## Usage
 
-Require the module in your app and call NLAscii.encodeToNonLossyAscii(text) and NLAscii.decodeFromNonLossAscii(text).
+Require the module in your app and call:
+
+    NLAscii.encodeToNonLossyAscii(text) 
+
+and 
+
+	NLAscii.decodeFromNonLossAscii(text).
 
 Example:
 
@@ -37,7 +43,7 @@ NLAscii.encodeToNonLossyAscii("El trozo de texto estándar de Lorem Ipsum usado 
 You can also use on twig templates to decode from Non Loss Ascii encoding:
 
 ```twig
-<span> {{ varText | NLAscii }}
+<span>{{ varText | NLAscii }}</span>
 ```
 
 
