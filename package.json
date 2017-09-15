@@ -1,0 +1,10 @@
+{
+  "name": "angular-nonlossyascii",
+  "version": "v1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0"
+  }
+}
