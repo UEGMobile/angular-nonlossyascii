@@ -3,6 +3,7 @@
     "description" : "AngularJS factory and filters for Non Lossy Ascii String Encoding.",
     "version": "v1.0.0",
     "main": "dist/angular-nonlossyascii.js",
+    "homepage": "https://github.com/UEGMobile/angular-nonlossyascii",
     "license": "MIT",
     "authors" : [{
         "name" : "Pablo Nuñez",
@@ -14,6 +15,9 @@
         "Encoding",
         "nonLossyASCII"
     ],
+    "support": {
+        "issues": "https://github.com/UEGMobile/angular-nonlossyascii/issues"
+    },
     "ignore": [
         "source",
         "spec",
