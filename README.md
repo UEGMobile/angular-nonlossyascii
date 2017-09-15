@@ -9,4 +9,35 @@ Copyright (C) 2017, Pablo Núñez
 
 ## Usage
 
+Require the module in your app and call NLAscii.encodeToNonLossyAscii(text) and NLAscii.decodeFromNonLossAscii(text).
+
+Example:
+
+``` javascript
+// add the uuid4 module to your app
+myapp = angular.module('myapp', ['NonLossyAscii']);
+
+// inject it into your component
+myapp.factory('FancyFactory', function(NLAscii){
+  return {
+    codeThatNeedsNonLossAscii: function() {
+      return NLAscii.encodeToNonLossyAscii("El trozo de texto est\341ndar de Lorem Ipsum usado desde el a\361o 1500");
+    }
+  };
+});
+```
+
+You can also decode strings.
+
+```javascript
+NLAscii.encodeToNonLossyAscii("El trozo de texto estándar de Lorem Ipsum usado desde el año 1500");
+// El trozo de texto est\341ndar de Lorem Ipsum usado desde el a\361o 1500
+```
+
+You can also use on twig templates to decode from Non Loss Ascii encoding:
+
+```twig
+<span> {{ varText | NLAscii }}
+```
+
 
