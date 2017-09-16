@@ -6,26 +6,37 @@ module.exports = function( grunt ) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify : {
-      production : {
-        src: [ SRC + '/**/*.js' ],
-        dest: 'angular-nonlossyascii.min.js'
+    meta: {
+      banner: '/**\n' +
+        ' * <%= pkg.description %>\n' +
+        ' * @version v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
+        ' * @link <%= pkg.homepage %>\n' +
+        ' * @license MIT License, http://www.opensource.org/licenses/MIT\n' +
+        ' */\n'
+    },
+
+    concat : { 
+      options: {
+        banner: '<%= meta.banner %>'
+      },
+      dist: {
+        src: [ SRC + '/angular-nonlossyascii.js' ],
+        dest: '<%= pkg.name %>.js'
       }
     },
 
-    copy : {
+    uglify : {
       production : {
-        files : [
-          { src: SRC + '/angular-nonlossyascii.js', dest : 'angular-nonlossyascii.js' }
-        ]
+        src: [ 'angular-nonlossyascii.js' ],
+        dest: 'angular-nonlossyascii.min.js'
       }
     }
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', [ 'copy', 'uglify']);
+  grunt.registerTask('build', ['concat', 'uglify']);
 };

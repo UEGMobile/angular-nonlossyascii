@@ -1,5 +1,9 @@
-/* angular-nonlossyascii.js / v0.0.1 / (c) 2017 Pablo Nuñez / MIT Licence */
-
+/**
+ * 
+ * @version v1.0.1 - 2017-09-16
+ * @link http://github.com/UEGMobile/angular-nonlossyascii.git
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
 (function () {
 
     "use strict";

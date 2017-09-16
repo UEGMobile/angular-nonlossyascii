@@ -1,9 +1,15 @@
 {
   "name": "angular-nonlossyascii",
-  "version": "v1.0.0",
+  "version": "1.0.1",
+  "homepage": "http://github.com/UEGMobile/angular-nonlossyascii.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UEGMobile/angular-nonlossyascii.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^3.1.0"
   }
