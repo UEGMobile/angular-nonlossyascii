@@ -18,7 +18,7 @@ You can install this package either with npm or with bower.
 ### npm
 
 ```shell
-npm install angular-nonlossyascii
+npm install angular-nonlossyascii --save
 ```
 
 Then add NonLossyAscii as a dependency for your app:
