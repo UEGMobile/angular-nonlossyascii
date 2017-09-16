@@ -11,6 +11,38 @@ Copyright (C) 2017, Pablo Núñez
 
 *My first recommendation to encode strings on any system is UTF-8. But if you need compatibility with an existing platform, you can use this js.*
 
+## Installation
+
+You can install this package either with npm or with bower.
+
+### npm
+
+```shell
+npm install angular-nonlossyascii
+```
+
+Then add NonLossyAscii as a dependency for your app:
+
+angular.module('myApp', [require('NonLossyAscii')]);
+
+### bower
+
+```shell
+bower install angular-nonlossyascii
+```
+
+Add a `<script>` to your `index.html`:
+
+```html
+<script src="/bower_components/angular-nonlossyascii/angular-nonlossyascii.min.js"></script>
+```
+
+Then add `NonLossyAscii` as a dependency for your app:
+
+```javascript
+angular.module('myApp', ['NonLossyAscii']);
+```
+
 ## Usage
 
 Require the module in your app and call:
