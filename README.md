@@ -30,7 +30,7 @@ angular.module('myApp', [require('NonLossyAscii')]);
 ### bower
 
 ```shell
-bower install angular-nonlossyascii
+bower install angular-nonlossyascii --save
 ```
 
 Add a `<script>` to your `index.html`:
