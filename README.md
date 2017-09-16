@@ -1,11 +1,15 @@
 angular-nonlossyasscii
 ==============
 
-AngularJS factory and filters for Non Lossy Ascii String Encoding.
+AngularJS factory and filters for Non Lossy Ascii String Encoding (7-bit verbose ASCII to represent all Unicode characters).
 
 Copyright (C) 2017, Pablo Núñez
 
 [![Build Status](https://travis-ci.org/UEGMobile/angular-nonlossyascii.png?branch=master)](https://travis-ci.org/UEGMobile/angular-nonlossyascii)
+
+## Important
+
+*My first recommendation to encode strings on any system is UTF-8. But if you need compatibility with an existing platform, you can use this js.*
 
 ## Usage
 
@@ -45,5 +49,11 @@ You can also use on twig templates to decode from Non Loss Ascii encoding:
 ```twig
 <span>{{ varText | NLAscii }}</span>
 ```
+
+## References
+
+- https://developer.apple.com/documentation/foundation/nsnonlossyasciistringencoding
+- https://stackoverflow.com/questions/13800183/nsnonlossyasciistringencoding-equivalent-for-android/34424525
+
 
 
