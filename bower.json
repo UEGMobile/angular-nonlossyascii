@@ -13,7 +13,8 @@
     "keywords" : [
         "Non Lossy Ascii",
         "Encoding",
-        "nonLossyASCII"
+        "nonLossyASCII",
+        "NSNonLossyASCIIStringEncoding"
     ],
     "support": {
         "issues": "https://github.com/UEGMobile/angular-nonlossyascii/issues"
