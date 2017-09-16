@@ -1,5 +1,5 @@
 /**
- * 
+ * AngularJS factory and filters for Non Lossy Ascii String Encoding.
  * @version v1.0.1 - 2017-09-16
  * @link http://github.com/UEGMobile/angular-nonlossyascii.git
  * @license MIT License, http://www.opensource.org/licenses/MIT
