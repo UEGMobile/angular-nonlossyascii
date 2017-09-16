@@ -2,7 +2,7 @@
     "name": "angular-nonlossyascii",
     "description" : "AngularJS factory and filters for Non Lossy Ascii String Encoding.",
     "version": "v1.0.0",
-    "main": "dist/angular-nonlossyascii.js",
+    "main": "angular-nonlossyascii.min.js",
     "homepage": "https://github.com/UEGMobile/angular-nonlossyascii",
     "license": "MIT",
     "authors" : [{
