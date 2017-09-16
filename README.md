@@ -23,7 +23,9 @@ npm install angular-nonlossyascii
 
 Then add NonLossyAscii as a dependency for your app:
 
+```javascript
 angular.module('myApp', [require('NonLossyAscii')]);
+```
 
 ### bower
 
