@@ -20,7 +20,7 @@ and
 Example:
 
 ``` javascript
-// add the uuid4 module to your app
+// add the angular-nonlossyasscii module to your app
 myapp = angular.module('myapp', ['NonLossyAscii']);
 
 // inject it into your component
